@@ -13,40 +13,35 @@
 
 <head>
     <style>
+         /* +   EX1) Write a selector to target the main title of the page */
         h1  {
             color: red;
         }
+        /* EX2) Write a selector to target every children of the navbar */
         .nav > * {
          background-color: green;
         }
+        /* EX5) Write a selector to target the "even" links in the navbar */
         .nav a:nth-of-type(2n) {
            background-color: tomato;
         }
+        /* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
       .jumbotron a{
           color: violet !important;
       }
+      /* EX7) Write a selector to target all the li into the sidebar */
       aside ol > li   {
         background-color: rgb(245, 69, 69);
       }
+      /* +   EX10) Write a selector to target the footer */
       footer {
           background-color: turquoise;
       }
+      /* EX9) Write a selector to target the "back to top" link */
       footer > p:last-child > a{
           background-color: tomato;
       }
-      
-        /*
-         +   EX1) Write a selector to target the main title of the page
-        +    EX2) Write a selector to target every children of the navbar
-          +  EX3) Write a selector to target the "continue reading..." inside the jumbotron
-   +       EX4) Write a selector to target the first blogpost
-       +   EX5) Write a selector to target the "even" links in the navbar
-         +   EX6) Write a selector to target the last blog post
-         +   EX7) Write a selector to target all the li into the sidebar
-           + EX8) Write a selector to target the second post author
-          +  EX9) Write a selector to target the "back to top" link
-         +   EX10) Write a selector to target the footer
-        */ 
+    
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,6 +75,7 @@
            background-color: yellow;
        }
      /* or */
+     /* EX4) Write a selector to target the first blogpost */
      .blog-post:first-of-type {
          background-color: teal;
      }
@@ -87,9 +83,11 @@
            background-color: green;
        }
        /* or */
+       /* +   EX6) Write a selector to target the last blog post */
        .blog-post:last-of-type {
          background-color: red;
      }
+     /* + EX8) Write a selector to target the second post author */
      .blog-post:nth-of-type(2)  > p:first-of-type > a{
         border: 5px solid red;
      }
