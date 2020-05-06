@@ -351,16 +351,7 @@
     
     /*
         JS Exercises
-      
-     
-     
-      
-        EX15) Write a function to change the column size for post headings
-        
-        EX17) Write a function to trim just the first 150 characters for each blog post
-      
-      
-      
+    
     */
     // EX11) Write a function to add a new link into the navbar
    function addNav() {
@@ -390,10 +381,24 @@
           head.style.backgroundColor = 'green';
       }
 
+    //   EX15) Write a function to change the column size for post headings
+    let titleForBlog  = document.querySelectorAll('.blog-post-title');
+    function changeSize() {
+        for(i=0 ; i < titleForBlog.length; i++) {
+            titleForBlog[i].classList.add('col-6');
+        }
+    }
+
+
+
     //   EX16) Write a function to remove all the links under "Elsewhere"
+     let linksElse = document.querySelector('aside div:last-child ol');
+     console.log(linksElse);
+     function removeLinks() {
+        linksElse.style.display = 'none';
+     }
 
-    
-
+    //  EX17) Write a function to trim just the first 150 characters for each blog post
 
     // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
        let btnNew = document.querySelector('.blog-pagination a:last-child');
